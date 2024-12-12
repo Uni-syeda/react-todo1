@@ -1,21 +1,6 @@
 import TodoListItem from "./TodoListItem";
-// create the 'todoList' array
-const todoList = [
-  {
-    id: 1,
-    title: "React",
-  },
-  {
-    id: 2,
-    title: "Learning",
-  },
-  {
-    id: 3,
-    title: "Journey",
-  },
-];
 
-function TodoList() {
+function TodoList({ todoList }) {
   return (
     <ul>
       {todoList.map((item) => (
